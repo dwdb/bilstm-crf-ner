@@ -46,9 +46,9 @@
 代码对CRF层官方实现进行了重构，加入了一些理解性的注释，代码实现的精髓：
 - sequence_score，对目标序列的分数计算**巧妙地**转换为矩阵运算；
 
-- CrfForwardRnnCell.\__call__，基于动态RNN网络实现对数归一化因子的前向递推动态规划；
+- CrfForwardRnnCell.__call\__，基于动态RNN网络实现对数归一化因子的前向递推动态规划；
 
-- CrfForwardRnnCell.\__call__， **没看懂源码的实现，感觉源码的实现好像不对**，进行了重新实现；
+- CrfForwardRnnCell.__call\__， **没看懂源码的实现，感觉源码的实现好像不对**，进行了重新实现；
 
 
 
