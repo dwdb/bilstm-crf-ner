@@ -48,7 +48,7 @@
 
 - CrfForwardRnnCell.\__call__，基于动态RNN网络实现对数归一化因子的前向递推动态规划；
 
-- CrfForwardRnnCell.\__call__重新实现，**没看懂源码的实现，感觉源码的实现好像不对！！！**
+- CrfForwardRnnCell.\__call__， **没看懂源码的实现，感觉源码的实现好像不对**，进行了重新实现；
 
 
 
