@@ -1,15 +1,11 @@
 # bilstm-crf-ner
-双向长短期记忆网络、条件随机场用于命名实体识别。
+双向长短期记忆网络、条件随机场用于命名实体识别。代码基于python3.7 + tensorflow 1.14实现，<font color=blueviolent>**开箱即用**</font>，含训练数据集和已经训练好的模型文件（离线模型文件需在GPU机器上运行）。
 
-代码基于python3.7 + tensorflow 1.14实现，开箱即用，含训练数据集和已经训练好的模型文件（离线模型文件需在GPU机器上运行）。
+查看本人博客有更详细的原理说明：[自然语言处理：序列标注（BiLSTM-CRF）](https://blog.csdn.net/sinat_34072381/article/details/105869963)
 
+代码实现参考仓库：https://github.com/Determined22/zh-NER-TF
 
-
-查看本人博客有更详细的原理说明：
-
-[自然语言处理：序列标注（BiLSTM-CRF）](https://blog.csdn.net/sinat_34072381/article/details/105869963)
-
-
+<br>
 
 ## 训练模型
 
@@ -33,7 +29,7 @@
 > python model.py train
 ```
 
-
+<br>
 
 ## 在线预测
 
@@ -43,19 +39,18 @@
 > python model.py
 ```
 
-
+<br>
 
 ## CRF网络
 
 代码对CRF层官方实现进行了重构，加入了一些理解性的注释，代码实现的精髓：
-
 - sequence_score，对目标序列的分数计算**巧妙地**转换为矩阵运算；
-
 - CrfForwardRnnCell.\__call__，基于动态RNN网络实现对数归一化因子的前向递推动态规划；
-
 - CrfForwardRnnCell.\__call__重新实现，**没看懂源码的实现，感觉源码的实现好像不对！！！**
 
-  
+
+
+<br>
 
 ## 后续工作
 
